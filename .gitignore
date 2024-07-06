@@ -136,3 +136,10 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+
+# Ignore database files
+*.sqlite3
+
+# Ignore migrations
+*/migrations/*
+!*/migrations/__init__.py
