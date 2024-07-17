@@ -24,3 +24,8 @@ class Menu(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+    def get_item(self):
+        """This method return a created menu
+        item in string datatype"""
+        return f'{self.title} : {self.price}'
